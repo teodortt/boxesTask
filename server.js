@@ -38,9 +38,9 @@ app.post('/move-element', (req, res) => {
                 console.error(err);
             }
             // file written successfully
+            res.send(updatedData);
         });
 
-        res.send(updatedData);
     });
 
 });
